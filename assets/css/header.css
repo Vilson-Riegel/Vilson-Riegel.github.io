@@ -1,0 +1,44 @@
+.header {
+  max-width: 1160px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a {
+  font-family: 'Playfair Display', serif; 
+  font-weight: bold;
+  font-size: 3rem;
+  display: block;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.menu li a {
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  display: block;
+}
+.menu li a:hover {
+  background-color: #A839FF;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+@media (max-width: 600px) {
+  .header {
+    margin: 10px auto;
+    flex-direction: column;
+  }
+  .menu a {
+    background-color: #A839FF;
+    color: #fff;
+    border-radius: 5px;
+  }
+}

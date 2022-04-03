@@ -1,0 +1,11 @@
+/* Nome das Fontes 
+font-family: 'Playfair Display'; 
+font-family: 'Fira Sans', sans-serif;
+*/
+
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./experiencia.css";
+@import "./formacao.css";
+@import "./footer.css";

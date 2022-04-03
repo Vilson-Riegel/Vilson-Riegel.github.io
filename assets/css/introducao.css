@@ -1,0 +1,102 @@
+.introducao {
+  max-width: 1160px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao .detalhe h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+.detalhe {
+  position: relative;
+}
+.detalhe h1::before {
+  content: "";
+  width: 120px;
+  height: 20px;
+  background: #A839FF;
+  position: absolute;
+  top: 25px;
+  left: -25px;
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+.detalhe h1::after {
+  content: "";
+  width: 120px;
+  height: 20px;
+  background: #701CDA;
+  position: absolute;
+  top: 22px;
+  left: -50px;
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+
+@media (max-width: 1000px) {
+  .introducao .detalhe h1 {
+    font-size: 3rem;
+  }
+  .detalhe h1::before {
+    width: 60px;
+    height: 15px;
+    top: 18px;
+    left: -5px;
+  }
+  .detalhe h1::after {
+    width: 60px;
+    height: 15px;
+    top: 15px;
+    left: -20px;    
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .introducao .detalhe h1 {
+    font-size: 2rem;
+  }
+  .detalhe h1::before {
+    width: 40px;
+    height: 10px;
+    top: 15px;
+    left: -7px;
+  }
+  .detalhe h1::after {
+    width: 40px;
+    height: 10px;
+    top: 12px;
+    left: -17px;    
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao img {
+    display: none;
+  }
+  .introducao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .detalhe p {
+    font-size: 1rem;
+  }
+}
+
